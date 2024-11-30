@@ -1,0 +1,606 @@
+@font-face {
+    font-family: love;
+    src: url(Tirelessly\ Love\ You.ttf);
+}
+@font-face {
+    font-family: poppins-light;
+    src: url(Poppins/Poppins-Light.ttf);
+}
+@font-face {
+    font-family: poppins-regular;
+    src: url(Poppins/Poppins-Regular.ttf);
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    background-color:white;
+    font-family:sans-serif;
+    overflow: hidden;
+}
+.page1{
+    /* height: 100vh; */
+    width: 100vw;
+    position: relative;    
+}
+.nav{
+    padding:3vw 6vw;
+    /* background-color: rgb(122, 122, 122); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name{
+    height: 2vw;
+}
+.name>h2{
+    font-size: 1.6vw;
+    font-weight: 400;
+    color: #ee8bb9;
+}
+.nav-part2{
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+    /* background-color: yellow; */
+}
+.nav-part2>a{
+    font-size: 1vw;
+    text-decoration: none;
+    color: rgb(196, 196, 196);
+    font-weight: 500;
+}
+.nav-part2>a>span{
+    background-color:#ee8bb9;
+    color: white;
+    padding:8px 16px;
+    border-radius:20px;
+}
+ .nav-part2>button{
+    display: flex;
+    align-items: center;
+    font-size: 1vw;
+    font-weight: 500;
+    background-color:transparent;
+    outline: none;
+    border: none;
+    padding:.6vw .8vw;
+    color: #ee8bb9;
+    border-radius:12px;
+    border: 1px solid  #ee8bb9;
+    transition: all ease-in 0.2s;
+}
+ .nav-part2>button>i{
+    font-size: 2vw;
+    padding-right: 4px;
+}
+.nav-part2>button:hover{
+    background-color:#ee8bb9;
+    color: white;
+    transition: all ease-in 0.2s;
+    cursor: pointer;
+    box-shadow: 0 0px 12px #ee8bb99c;
+}
+.hero{
+    margin-top: 4vw;
+    padding: 2vw;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.heading{
+    margin-top:4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: poppins;
+}
+.heading>h1{
+    font-size: 3vw;
+    font-weight: 400;
+    font-family:poppins-regular;
+    width: 55vw;
+    text-align: center;
+    color: rgb(0, 0, 0)
+}
+.heading>h1>span{
+    font-family: love;
+    color: #ee8bb9;
+}
+.heading>p{
+    font-size: 1vw;
+    line-height: 1.8vw;
+    font-weight: 300;
+    font-family: poppins-light;
+    width: 60vw;
+    margin-top:2vw;
+    text-align: center;
+    color: rgb(138, 138, 138);
+}
+.resume{
+    display: none;
+}
+.hero>img{
+    margin-top: 4vw;
+    height: 90vh;
+}
+.skills{
+    padding:2vw 6vw;
+    /* background-color: rgb(128, 128, 128); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sec{
+    background-color:white;
+    height: 27vh;
+    width: 25vw;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border-left: 4px solid #dadada;
+    border-top: 1px solid #dadada;
+    border-bottom: 2px solid #dadada;
+    border-right: 1px solid #dadada;
+}
+.sec>h4{
+    color:#ee8bb9;
+    font-family: poppins-regular;
+    font-size:1.4vw;
+    padding-bottom: 0.7vw;
+}
+.sec>p{
+    font-size: 1vw;
+    color:rgb(181, 181, 181);
+}
+.work-samples{
+    padding: 5vw 6vw;
+    /* background-color: blue; */
+}
+.work-samples>h1{
+    font-size: 5vw;
+    font-family: poppins-regular;
+    font-weight: 400;
+}
+.line{
+    height: 3px;
+    width: 15vw;
+    margin-top: -1vw;
+    background-color: black;
+}
+.samples{
+    margin-top: 5vw;
+    display: flex;
+    gap: 30px;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-between;
+}
+.design{
+    height: 37vh;
+    width: 30vw;
+    /* background-color: wheat; */
+    border-radius: 10px;
+}
+.design>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-left: 4px solid #dadada;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    border-right: 4px solid #dadada;
+    border-radius: 5px;
+}
+.all-work-link{
+    height: 37vh;
+    width: 30vw;
+    /* background-color: wheat; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.all-work-link>a{
+    padding: 1.2vw;
+    border-radius: 50%;
+    background-color:#ee8bb9;
+    text-decoration: none;
+    color: white;
+}
+.all-work-link>a>i{
+    font-size: 1.7vw;
+    font-weight: 400;
+}
+.all-work-link>h2{
+    font-size: 1.5vw;
+    font-family: poppins-light;
+    font-weight: 550;
+}
+.skill-interest{
+    padding:2vw 6vw;
+    /* background-color: hotpink; */
+}
+.skill-interest>h1{
+    font-size: 5vw;
+    font-family: poppins-regular;
+    font-weight: 400;
+}
+.lin{
+    height: 3px;
+    width: 18vw;
+    margin-top: -1vw;
+    background-color: black;
+}
+.box{
+    margin-top: 4vw;
+    /* background-color: rebeccapurple; */
+}
+.box>h2{
+    font-family: poppins-light;
+    font-size: 2vw;
+    font-weight: 700;
+}
+.icons{
+    margin-top: 1vw;
+    width: 40vw;
+    padding: 2vw;
+    background-color: #ffffff;
+    border-radius: 5px;
+    border-left: 4px solid #dadada;
+    border-top: 1px solid #dadada;
+    border-bottom: 2px solid #dadada;
+    border-right: 4px solid #dadada;
+}
+.icons>img{
+    height: 50px;
+    width: 50px;
+    margin-left: 2vw;
+}
+.web-showcase{
+    padding:2vw 6vw;
+    position: relative;
+    /* background-color: red; */
+}
+.web-showcase>h1{
+    margin-top: 3vw;
+    font-size: 5vw;
+    font-family: poppins-regular;
+    font-weight: 400;
+}
+.video{
+    margin-top: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 20vw;
+}
+.vid{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 80%;
+    width: 32%;
+    overflow: hidden;
+}
+.vid>video{
+    height: 86%;
+    width: 100%;
+    object-fit: cover;
+}
+.vid>a{
+    font-size: 1vw;
+    color: #b4b2b2;
+    text-decoration: none;
+}
+.aboutme{
+    padding: 3vw 6vw;
+}
+.aboutme>h1{
+    font-size: 5vw;
+    font-family: poppins-regular;
+    font-weight: 400;
+}
+.abtme-line{
+    height: 3px;
+    width: 13vw;
+    margin-top: -1vw;
+    background-color: black;
+    margin-bottom: 3vw;
+}
+.aboutme>p{
+    font-size: 1.7vw;
+    font-weight: 300;
+    font-family: poppins-light;
+    color:black;
+}
+.aboutme>h4{
+    margin-top: 7vw;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: #929191;
+}
+
+body::-webkit-scrollbar{
+  background-color:transparent;
+}
+body::-webkit-scrollbar-thumb{
+  background-color:#ee8bb9;
+  border-radius: 10px;
+  transition: "body" ease-in 3s;
+}
+
+/* Your existing styles */
+
+/* Media query for small screens (mobile devices) */
+@media screen and (max-width: 768px) {
+    /* Navigation Styles */
+    .nav {
+        margin-top: 5vw;
+        margin-bottom:25vw;
+        text-align: center;
+    }
+    .name > h2{
+        font-size: 3.5vw;
+    }
+  
+    .nav-part2 {
+      gap: 4vw;
+      text-align: center;
+    }
+  
+    .nav-part2 > a{
+      display: none;
+    }
+    
+    .nav-part2 > button {
+      font-size: 2.7vw;
+      padding: 2vw 3.5vw;
+      color: white;
+      background-color:#ee8bb9;
+    }
+    .nav-part2 > button > i{
+        color: white;
+        font-size:4vw;
+    }
+  
+    /* Hero Section Styles */
+    .hero > img {
+      width: 100%;
+      height: 100%;
+    }
+  
+    /* Heading Styles */
+    .heading > h1 {
+      margin-top: 2vw;
+      font-size: 6.5vw;
+      width: 90%;
+      text-align: center;
+      line-height: 7.5vw;
+    }
+  
+    .heading > h1 > span {
+      font-size: 7vw;
+    }
+  
+    .heading > p {
+      font-size: 3vw;
+      width: 100%;
+      text-align: center;
+      padding: 0vw 2vw;
+      margin-top: 5vw;
+      margin-bottom: 4vw;
+      line-height: 4vw;
+    }
+
+    .resume{
+        display: block;
+        margin: 5vw 0vw;
+
+    }
+
+    .resume > a{
+        text-decoration: none;
+        color: white;
+        background-color:#ee8bb9;
+        font-size: 2.5vw;
+        padding: 2vw 4vw;
+        margin: 10vw 0vw;
+        border-radius: 20px;
+    }
+  
+    /* Section Styles */
+    .skills, .nav,
+    .work-samples,
+    .skill-interest,
+    .web-showcase,
+    .aboutme {
+      padding: 0vw 4vw;
+    }
+  
+    .skills {
+      margin-top: 10vw;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+  
+    .sec {
+      padding: 10vw 0vw;
+      height: 10vw;
+      width: 80%;
+      margin-bottom: 5vw;
+      border-left: 3px solid #dadada;
+      border-top: 1px solid #dadada;
+      border-bottom: 1px solid #dadada;
+      border-right: 3px solid #dadada;  
+    }
+  
+    .sec > h4 {
+      font-size: 3.8vw;
+      font-weight: 500;
+    }
+  
+    .sec > p {
+      margin-top: 3vw;
+      font-size: 3vw;
+    }
+  
+    /* Work Samples Styles */
+    .work-samples > h1 {
+      margin-top: 10vw;
+      font-size: 7vw;
+    }
+  
+    .line {
+      width: 25vw;
+    }
+  
+    .samples {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 2vw;
+    }
+  
+    .design {
+      height: auto;
+      width: 90%;
+      margin-bottom: 2vw;
+    }
+  
+    .design > img {
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      border-left: 3px solid #dadada;
+      border-top: 1px solid #dadada;
+      border-bottom: 1px solid #dadada;
+      border-right: 3px solid #dadada;   
+     }
+  
+    .all-work-link {
+      height: auto;
+      width: 90%;
+      margin: 4vw 0vw;
+      margin-bottom: 15vw;
+    }
+  
+    .all-work-link > a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 30px;
+      width: 30px;
+    }
+  
+    .all-work-link > a > i {
+      font-size: 3.5vw;
+    }
+  
+    .all-work-link > h2 {
+      font-size: 5vw;
+      font-weight: 400;
+    }
+  
+    /* Skill Interest Styles */
+    .skill-interest > h1 {
+      margin-top: 10vw;
+      font-size: 7vw;
+    }
+  
+    .lin {
+      width: 25vw;
+    }
+  
+    .box {
+      margin-top: 7vw;
+    }
+  
+    .box > h2 {
+      font-size: 3vw;
+    }
+  
+    .icons {
+      margin-top: 1vw;
+      width: 95%;
+      padding: 3vw;
+      border-left: 3px solid #dadada;
+      border-top: 1px solid #dadada;
+      border-bottom: 1px solid #dadada;
+      border-right: 3px solid #dadada;     
+    }
+  
+    .icons > img {
+      height: 40px;
+      width: 40px;
+      margin-left: 1vw;
+    }
+  
+    /* Web Showcase Styles */
+    .web-showcase > h1 {
+      margin-top: 15vw;
+    }
+  
+    .video {
+      height: 100%;
+      width: 100%;
+      margin: 12vw 0vw;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .vid {
+      height: 100%;
+      width: 90%;
+      margin-bottom: 7vw;
+    }
+  
+    .vid > video {
+      height: 100%;
+    }
+  
+    .vid > a {
+      font-size: 4vw;
+      margin-top: 1vw;
+    }
+  
+    /* About Me Styles */
+    .aboutme > h1{
+        font-size: 7vw;
+    }
+
+    .aboutme > p {
+      margin-top: 7vw;
+      font-size: 4.5vw;
+      width: 100%;
+    }
+  
+    .aboutme > h4 {
+      font-size: 4vw;
+      margin: 9vw 0vw;
+      font-weight: 400;
+    }
+  }
+  
+  
